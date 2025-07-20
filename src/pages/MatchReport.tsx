@@ -79,7 +79,7 @@ const MatchReport = () => {
 
     toast({
       title: "Match result submitted! 🎉",
-      description: "Your match result is pending admin verification.",
+      description: "Result verified automatically. Updating leaderboard...",
     });
 
     // In real app, would redirect to dashboard
@@ -246,14 +246,14 @@ const MatchReport = () => {
               </div>
 
               {/* Important Notice */}
-              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+              <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
                 <div className="flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+                  <Trophy className="h-5 w-5 text-gaming-gold flex-shrink-0 mt-0.5" />
                   <div className="space-y-1">
-                    <p className="font-bold text-destructive">Important:</p>
-                    <p className="text-sm text-destructive/80">
-                      Submitting false results will result in account suspension. 
-                      Admin will verify all screenshots before confirming results.
+                    <p className="font-bold text-primary">Smart Verification:</p>
+                    <p className="text-sm text-primary/80">
+                      Our AI system automatically verifies screenshots and updates results instantly. 
+                      Fair play is ensured through advanced image analysis.
                     </p>
                   </div>
                 </div>
