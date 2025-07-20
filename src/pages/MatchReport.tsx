@@ -259,6 +259,19 @@ const MatchReport = () => {
                 </div>
               </div>
 
+              {/* Warning */}
+              <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
+                <div className="flex gap-3">
+                  <AlertTriangle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+                  <div className="space-y-1">
+                    <p className="font-bold text-destructive">Warning:</p>
+                    <p className="text-sm text-destructive/80">
+                      Submitting fake results will be automatically detected and result in account suspension.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* Submit Button */}
               <Button 
                 type="submit" 
